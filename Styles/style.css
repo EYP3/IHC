@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+.imagen2 {
+	width: 130px;
+	height: 130px;
+	margin-right: 800px;
+	margin-top: 160px;
+}
+
+.contenedorp{
+	margin-right: 800px;
+	margin-top: 50px;
+}
+
+.imagen {
+	width: 200px;
+	height: 350px;
+	margin-top: -450px;
+	margin-left: 800px;
+	transform: rotate(-30deg);
+}
+
+.imagen1 {
+	width: 200px;
+	height: 350px;
+	margin-top: -50px;
+	margin-left: 300px;
+	transform: rotate(30deg);
+}
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #848483;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: #e39403;
+}
+
+.containerLogin{
+	width: 100%;
+	height: 100vh;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-container {
+	display: flex;
+	width: 650px;
+	height: auto;
+	background: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.register, .login {
+	flex: 1;
+}
+
+.register{
+	margin-top: -200px;
+	padding: 40px;
+	position: relative;
+}
+
+.register h2{
+	color: #797979;
+	margin-bottom: 25px;
+}
+
+.register input{
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 25px;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom: 1px solid #1f1d1d;
+	color: #333;
+}
+
+.register input:active,
+.register input:focus{
+  outline: none;
+}
+
+.register .submit{
+	width: auto;
+	padding: 17px;
+	background: #818181;
+	color: #fff;
+	font-size: 12px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+	cursor: pointer;
+}
+
+.login{
+	background-image: linear-gradient(to bottom right, #535352, #878985);
+	padding: 40px;
+}
+
+.login h2{
+	color: #fff;
+	margin-bottom: 45px;
+}
+   
+.login button i{
+	position: absolute;
+	top: 12px; 
+	left: 12px;
+}
+   
+.login button{
+	width: 100%;
+	margin: 15px 0px;
+	padding: 10px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+	cursor: pointer;
+	position: relative;
+}
+   
+.login .fb{
+	background: #3b5999;
+	border-style: none;
+	color: #fff;
+}
+   
+.login .tw{
+	background: #55acef;
+	border-style: none;
+	color: #fff;
+}
+   
+.login .correo{
+	background: #33d4ce;
+	border-style: none;
+	color: #fff;
+}
+   
+@media only screen and (max-width: 540px){
+	.login-container{
+	  display: block;
+	}
+   
+	.register, .login{
+	  flex: none;
+	}
+   
+	.register::after{
+	  top: unset;
+	  bottom: -25px;
+	  left: 50%;
+	  transform: translateX(-50%) rotate(90deg);
+	}
+}
+
+body {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.head{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 67px;
+	background: #171717;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.navbar {
+	display: flex;
+	margin-right: 10px;
+}
+
+.logo{
+	margin-left: 30px;
+	background: url(../Imagenes/TuTrade.ico);
+	background-size: cover;
+	height: 5.5vh;
+}
+
+.logo a{
+	text-decoration: none;
+	color: transparent;
+	text-transform: uppercase;
+	font-size: 20px;
+
+}
+
+.navbar a{
+	display: block;
+	padding: 20px 20px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.navbar a:hover {
+	background: #3f3f3f ;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header{
+	height: 95vh !important;
+	background: url(../Imagenes/t3.png) no-repeat center;
+	background-size: cover;
+}
+
+
+.title {
+	margin-bottom: 40px;
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:#fff
+}
+
+p{
+	margin-bottom: 40px;
+	font-size: 24px;
+	color: #fff;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 40px;
+	border: 2px solid white;
+	color: #171717;
+	text-decoration: none;
+	background: white;
+}
+
+.btn:hover{
+	background: none;
+}
+
+.btn-home{
+	display: flex;
+}
+
+.btn-home a{
+	margin: 0 10px;
+}
+ 
+.content {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sau {
+	padding: 30px;
+	background: #1f1d1d;
+}
+
+.box-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;	
+}
+
+.box-container .box{
+	height: 11rem;
+	width: 17rem;
+	background: #101010;
+	text-align: center;
+	border-radius: 1rem;
+	box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
+	margin: 2rem;
+}
+
+.box-container .box i {
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	text-align: cen;
+	border-radius: 50%;
+	color: #171717;
+	background: #fff;
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.box-container .box h3{
+	font-size: 20px;
+	color: #B7B7B7;
+}
+
+.box-container .box p{
+	padding: 0 14px;
+	font-size: 16px;
+}
+
+.about{
+	background: #171717;
+}
+
+.contact {
+	padding-top: 20px;
+	background: #1f1d1d;
+	padding-bottom: 0;
+	height: 68vh;
+}
+
+.App {
+	padding-top: 20px;
+	background: #171717;
+	padding-bottom: 0;
+	height: 100vh;
+}
+
+.Perfil{
+	padding-top: 20px;
+	background: #1f1d1d;
+	padding-bottom: 0;
+	height: 95vh;
+	
+}
+
+@media (max-width: 768px) {
+	.title{
+		margin-bottom: 0;
+		font-size: 40px;
+	}
+
+	.sau{
+		height: 110vh;
+	}
+
+	.navbar{
+		display: none;
+	}
+}
+
+footer {
+	background-color: #171717;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
