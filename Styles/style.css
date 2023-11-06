@@ -235,7 +235,7 @@ body {
 
 .logo{
 	margin-left: 30px;
-	background: url(Imagenes/TuTrade.ico);
+	background: url(../Imagenes/TuTrade.ico);
 	background-size: cover;
 	height: 5.5vh;
 }
@@ -269,7 +269,7 @@ body {
 
 .header{
 	height: 95vh !important;
-	background: url(Imagenes/t3.png) no-repeat center;
+	background: url(../Imagenes/t3.png) no-repeat center;
 	background-size: cover;
 }
 
