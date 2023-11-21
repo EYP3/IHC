@@ -7,6 +7,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/ce30c6609f.js" crossorigin="anonymous"></script>    
 	<script src="script.js"></script> 
+	<script>
+        var ancho;
+	function openwindow() {
+	ancho = window.open('','', "width=800, height=800"); 
+	ancho.focus();}
+	</script>
 </head>
 <body>
 	<div class="head">
@@ -177,7 +183,11 @@ function openwindow() {
 			</div>
 		</div>
 	</section>
-
+	
+    <section>
+    <button onclick="openwindow ()">CREAR PUBLICACION</button>
+    </section>
+	
 	<footer>
 		<p>Todos los derechos reservados &copy; 2023	TuTrade</p>
 	</footer>
