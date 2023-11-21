@@ -43,6 +43,21 @@ function openwindow() {
     ancho.document.close();
     ancho.focus();
 }
+function openwindow() {
+    var ancho = 800;
+    var alto = 360;
+
+    // Calculando la posición para centrar la ventana
+    var left = (window.screen.width / 2) - (ancho / 2);
+    var top = (window.screen.height / 2) - (alto / 2);
+
+    // Abriendo la ventana en la posición calculada
+    var ventana = window.open('', '', 'width=' + ancho + ',height=' + alto + ',top=' + top + ',left=' + left);
+
+    ventana.document.write('<p>El trueque es una de las primeras formas de comercio establecidas por las civilizaciones antiguas... (resto del texto) ...</p>');
+    ventana.document.close();
+    ventana.focus();
+}
 </script>
 			
 		<div class="btn-home">
