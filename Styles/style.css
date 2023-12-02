@@ -7,6 +7,64 @@
 	vertical-align: baseline;
 }
 
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.Abrir-menu,
+.Cerrar-menu{
+	display: none;
+}
+
+@media screen and (max-width: 550px) {
+		.Abrir-menu, .Cerrar-menu{
+			display: block;
+			border: 0;
+			font-size: 1.25rem;
+			background-color: transparent;
+			cursor: pointer;
+		}
+		
+		.Abrir-menu{
+			color: #171717;
+
+		}
+
+		.Cerrar-menu{
+			color: #ececec;
+		}
+		.navbar{
+			opacity: 0;
+			visibility: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+			gap: 1rem;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #171717;
+			padding: 2rem;
+			box-shadow: 0 0 0 0 100vmax rgba(0, 0, 0, .5); 
+		}
+
+		.navbar.visible{
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.navbar{
+			flex-direction: column;
+			align-items: end;
+		}
+
+		.navbar a{
+			color: #ececec;
+		}
+}
+
 .imagen2 {
 	width: 130px;
 	height: 130px;
@@ -228,6 +286,7 @@ body {
 	z-index: 100;
 }
 
+
 .navbar {
 	display: flex;
 	margin-right: 10px;
@@ -401,6 +460,11 @@ p{
 	.navbar{
 		display: none;
 	}
+}
+
+.perfil-registro {
+	color: #eef6f6;
+	font-size: 20px;
 }
 
 footer {
